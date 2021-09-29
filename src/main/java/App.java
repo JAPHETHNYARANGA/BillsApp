@@ -21,7 +21,7 @@ public class App {
             return new ModelAndView(new HashMap(), "home.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/Notificatins", (request, response) -> {
+        get("/Notifications", (request, response) -> {
             return new ModelAndView(new HashMap(), "Notifications.hbs");
         }, new HandlebarsTemplateEngine());
 
