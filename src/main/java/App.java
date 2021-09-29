@@ -10,7 +10,7 @@ public class App {
 
         staticFileLocation("/public");
 
-        get("/login", (request, response) -> {
+        get("/", (request, response) -> {
             return new ModelAndView(new HashMap(), "login.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -21,7 +21,7 @@ public class App {
             return new ModelAndView(new HashMap(), "home.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/favorite_photos", (request, response) -> {
+        get("/Notifications", (request, response) -> {
             return new ModelAndView(new HashMap(), "Notifications.hbs");
         }, new HandlebarsTemplateEngine());
 
