@@ -10,7 +10,7 @@ public class App {
 
         staticFileLocation("/public");
 
-        get("/login", (request, response) -> {
+        get("/", (request, response) -> {
             return new ModelAndView(new HashMap(), "login.hbs");
         }, new HandlebarsTemplateEngine());
 
