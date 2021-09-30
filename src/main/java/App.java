@@ -53,9 +53,9 @@ public class App {
 //
 //        con = sql2o.open();
 //
-//        newsDao = new MySql2OMyNewsDao(sql2o);
-//        dptDao = new MySql2OMyDepartmentDao(sql2o);
-//        userDao = new MySql2OMyUserDao(sql2o);
+//
+//        billsDao = new BillsDao(sql2o);
+//        registerDao = new RegisterDao(sql2o);
 
         staticFileLocation("/public");
 
