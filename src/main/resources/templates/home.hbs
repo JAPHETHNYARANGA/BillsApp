@@ -1,14 +1,77 @@
-
 {{#partial "styles"}}
     <link rel='stylesheet' href='/css/home.css'>
 {{/partial}}
 {{#partial "content"}}
+    <h3 class = "home-header">Bill Tracker</h3>
+    <div class = "form-content">
+        <div class = "container">
+            <div class = "row">
+                <div class ="col-md-10">
+                    <form action = "" method="post">
+                        <h5 id ="second-header">Please select your monthly bill and input amount</h5>
+                        <div class ="rent-section">
+                            <label for ="rent">Rent</label>
+                            <input type ="radio" id ="rent-yes" name ="rent-option" value="Yes">
+                            <label for ="rent-yes">Yes</label><br>
+                            <input type ="radio" id ="rent-no" name ="rent-option" value="No">
+                            <label for ="rent-no">No</label>
+
+                            <label for ="rent-amount">Amount</label>
+                            <input type ="number" id ="rent-amount" name ="rent-amount" min="1" value = "Amount"><br>
+                            <label for ="rent-date">Due date</label>
+                            <input type ="date" id ="rent-date" name ="rent-date" value ="Rent-date">
+                        </div>
+                        <div class ="food-section">
+                            <label for ="Food">Food</label>
+                            <input type ="radio" id ="food-yes" name ="food-option" value="Yes">
+                            <label for ="food-yes">Yes</label><br>
+                            <input type ="radio" id ="food-no" name ="food-option" value="No">
+                            <label for ="food-no">No</label>
+
+                            <label for ="food-amount">Amount</label>
+                            <input type ="number" id ="food-amount" name ="food-amount" min="1" value = "Amount"><br>
+                            <label for ="food-date">Due date</label>
+                            <input type ="date" id ="food-date" name ="food-date" value ="Food-date">
+                        </div>
+                        <div class ="water-section">
+                            <label for ="Water">Water</label>
+                            <input type ="radio" id ="water-yes" name ="water-option" value="Yes">
+                            <label for ="water-yes">Yes</label><br>
+                            <input type ="radio" id ="water-no" name ="water-option" value="No">
+                            <label for ="water-no">No</label>
+
+                            <label for ="water-amount">Amount</label>
+                            <input type ="number" id ="water-amount" name ="water-amount" min="1" value = "Amount"><br>
+                            <label for ="water-date">Due date</label>
+                            <input type ="date" id ="water-date" name ="water-date" value ="Water-date">
+                        </div>
+                        <div class ="electricity-section">
+                            <label for ="Electricity">Electricity</label>
+                            <input type ="electricity" id ="electricity-yes" name ="electricity-option" value="Yes">
+                            <label for ="electricity-yes">Yes</label><br>
+                            <input type ="electricity" id ="electricity-no" name ="electricity-option" value="No">
+                            <label for ="electricity-no">No</label>
+
+                            <label for ="electricity-amount">Amount</label>
+                            <input type ="number" id ="electricity-amount" name ="electricity-amount" min="1" value = "Amount"><br>
+                            <label for ="electricity-date">Due date</label>
+                            <input type ="date" id ="electricity-date" name ="electricity-date" value ="Electricity-date">
+                        </div>
+
+                        <button class ="home-button" type ="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
-//write code here
 
-home page
+
 
 
 
