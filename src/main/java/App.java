@@ -32,12 +32,12 @@ public class App {
                 Integer.parseInt(process.environment().get("PORT")):7654;
         port(port);
 
-        String connectionStr="jdbc:postgresql://localhost:5432/Billsapp";
+        String connectionStr="jdbc:postgresql://localhost:5432/billsapp";
 
         try {
             if (System.getenv("DATABASE_URL") == null) {
                 dbUri = new URI("");
-                sql2o = new Sql2o(connectionStr,"","");
+                sql2o = new Sql2o(connectionStr,"japhethnyaranga","34120648");
 
             } else {
 
