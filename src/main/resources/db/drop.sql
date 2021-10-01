@@ -1,2 +1,1 @@
-DROP TABLE bills;
-DROP TABLE users;
+drop DATABASE billsapp;
