@@ -4,14 +4,13 @@ import java.util.Date;
 public class Bills {
     private String name;
     private int amount;
-    private long  date;
+    private long dueDate;
     private Timestamp billEntryDate;
 
-
-    public Bills(String name, int amount, long date, Timestamp billEntryDate) {
+    public Bills(String name, int amount, long dueDate, Timestamp billEntryDate) {
         this.name = name;
         this.amount = amount;
-        this.date = date;
+        this.dueDate = dueDate;
         this.billEntryDate = billEntryDate;
     }
 
@@ -31,13 +30,14 @@ public class Bills {
         this.amount = amount;
     }
 
-    public long getDate() {
-        return date;
+    public long getDueDate() {
+        return dueDate;
     }
 
-    public void setDate(long date) {
-        this.date = date;
+    public void setDueDate(long dueDate) {
+        this.dueDate = dueDate;
     }
+
     public Timestamp getBillEntryDate() {
         return billEntryDate;
     }

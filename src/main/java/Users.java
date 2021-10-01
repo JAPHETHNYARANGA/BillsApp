@@ -1,9 +1,9 @@
-public class Register {
+public class Users {
     private String username;
     private String password;
     private String confirm_password;
 
-    public Register(String username, String password, String confirm_password) {
+    public Users(String username, String password, String confirm_password) {
         this.username = username;
         this.password = password;
         this.confirm_password = confirm_password;
