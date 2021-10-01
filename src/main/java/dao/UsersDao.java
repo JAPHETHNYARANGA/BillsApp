@@ -7,9 +7,13 @@ public interface UsersDao {
 
     void add(Users users); //create
 
+    void addBill(Bills bills);
+
     Users findById(int id); //read by id
 
     List<Users>getAll(); //read All
+
+    List<Bills>getBillsForUser();
 
     void update(int id, String userName, String password); //not sure about password
 
