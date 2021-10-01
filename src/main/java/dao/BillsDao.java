@@ -9,6 +9,8 @@ public interface BillsDao {
 
     List<Bills>getAll();
 
+    List<Users>getUsersForBill();
+
     void update(String billName, int amount, date dueDate, timestamp billEntryDate); //review type for due date
 
     void deleteById(int id);
