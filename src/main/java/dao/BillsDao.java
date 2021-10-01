@@ -1,4 +1,5 @@
 package dao;
+import models.Bills;
 
 public interface BillsDao {
 
@@ -8,7 +9,7 @@ public interface BillsDao {
 
     List<Bills>getAll();
 
-    void update(String billName, int amount, date dueDate); //review type for due date
+    void update(String billName, int amount, date dueDate, timestamp billEntryDate); //review type for due date
 
     void deleteById(int id);
 
