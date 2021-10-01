@@ -1,0 +1,21 @@
+.form{
+   /*border-width: 20px;*/
+    background-position: center;
+    background-color: white;
+    padding:50px;
+    margin-top:60px;
+    border-radius: 20px;
+ color: deeppink;
+
+}
+.form-control{
+ margin-bottom: 20px;
+    color: deeppink;
+}
+.register{
+    color: midnightblue;
+}
+.confirm{
+    color: blue;
+}
+

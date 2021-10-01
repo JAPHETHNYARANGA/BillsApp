@@ -3,14 +3,26 @@
 {{/partial}}
 {{#partial "content"}}
 
+<form action="/home"method= "post" class="form">
+    <div class="form-control">
+        <label for="username">Username</label><br>
+        <input id="name" placeholder="Username" name="name" type="text" value=""><br>
+    </div>
+    <div class="form-control">
 
+        <label for="password">Password</label><br>
+        <input id="password" placeholder="Password" name="password" type="text" value=""><br>
 
-//write code here
+    </div>
+    <div class="form-control">
 
+        <label for="confirm-password" class="confirm"> Confirm Password</label><br>
+        <input id="confirm-password" placeholder="Confirm Password" name="confirm-password" type="text" value=""><br>
 
-
-
-
+    </div>
+    <button type="login" class="register">Register</button><br>
+    <p>Already have an account?<a href="/home">Login Here</a></p><br>
+</form>
 
 {{/partial}}
 
