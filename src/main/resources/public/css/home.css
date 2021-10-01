@@ -1,0 +1,15 @@
+.home-header{
+    text-align:center;
+    color: #FF33DD;
+}
+.form-content{
+    background-color:#F9F4F8;
+    border: 1px solid #F9F4F8;
+    font-weight: bold;
+    padding: 10px ;
+    margin:auto;
+    color: #FF33DD;
+    font-size: 15px;
+    font-family:arial;
+
+}
