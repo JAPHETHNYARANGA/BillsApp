@@ -20,7 +20,7 @@ public class App {
     private static Sql2o sql2o;
     private static URI dbUri;
     private static Logger logger = LoggerFactory.getLogger(App.class);
-    private static Gson gson = new Gson();
+//    private static Gson gson = new Gson();
     private  static Connection con;
 
     public static void main(String[] args) {
@@ -57,8 +57,8 @@ public class App {
         con = sql2o.open();
 
 
-        billsDao = new BillsDao(sql2o);
-        UsersDao = new UsersDao(sql2o);
+//        billsDao = new BillsDao(sql2o);
+//        UsersDao = new UsersDao(sql2o);
 
         staticFileLocation("/public");
 
