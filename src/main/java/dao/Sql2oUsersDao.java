@@ -7,11 +7,12 @@ import org.sql2o.Sql2oException;
 import java.util.List;
 
 public class Sql2oUsersDao implements UsersDao {
-    private final Sql2o sql2o;
-
-    public Sql2oUsersDao( Sql2o sql2o){
-        this.sql2o = sql2o;
-    }
+//    private final Sql2o sql2o;
+//
+//    public Sql2oUsersDao( Sql2o sql2o){
+//        this.sql2o = sql2o;
+//    }
+    Sql2o sql2o = new Sql2o("jdbc:postgresql://localhost:5432/billsapp","japhethnyaranga","34120648");
 
     public void add(Users users){
         String sql = "INSERT INTO users (userName, password, confirm password) VALUES (:userName, :password, :confirm password)";
