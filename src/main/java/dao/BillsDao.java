@@ -1,7 +1,6 @@
 package dao;
-//import models.Bills;
+import models.Bills;
 
-import java.sql.Timestamp;
 
 public interface BillsDao {
 
@@ -11,7 +10,9 @@ public interface BillsDao {
 
     List<Bills>getAll();
 
-    void update(String name, int amount, long dueDate, Timestamp billEntryDate); //review type for due date
+
+    void update(String billName, int amount, date dueDate, timestamp billEntryDate); //review type for due date
+    List<Users>getUsersForBill();
 
     void deleteById(int id);
 

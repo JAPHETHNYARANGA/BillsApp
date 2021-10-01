@@ -24,6 +24,38 @@ public class Sql2oUsersDao implements UsersDao {
         }
 
     }
+
+    @Override
+    public void addBill(Bills bills){
+        try(Connection con = sql2o.open()){
+            String sql = "INSERT INTO users_bills (users_id, bills_id) VALUES (:users_id, :bills_id)";
+            con.createQuery(sql)
+                    .addParameter("users_id", this.getId()) //can change to users.getId()
+                    .addParameter("bills_id", bills.getId())
+                    .executeUpdate();
+        }
+
+    }
+    public List<Bills> getBillsForUser() {
+        try(Connection con = sql2o.open()){
+            String joinQuery = "SELECT bills_id FROM users_bills WHERE users_id = :users_id";
+            List<Integer> billsIds = con.createQuery(joinQuery)
+                    .addParameter("users_id", this.getId()) //can change to user.getId
+                    .executeAndFetch(Integer.class);
+
+            List<Bills> bills = new ArrayList<Bills>();
+
+            for (Integer billsId : billsIds) {
+                String billsQuery = "SELECT * FROM bills WHERE id = :billsId";
+                Bills bill = con.createQuery(billQuery)
+                        .addParameter("billsId", billsId)
+                        .executeAndFetchFirst(Bills.class);
+                bills.add(bill);
+            }
+            return bills;
+        }
+    }
+
     @Override
     public findById(int id) {
         try (Connection con = sql2o.open()) {
