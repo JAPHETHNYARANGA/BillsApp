@@ -15,7 +15,7 @@ public interface UsersDao {
 
     List<Bills>getBillsForUser();
 
-    void update(int id, String userName, String password); //not sure about password
+    void update(int id, String username, String password); //not sure about password
 
     void deleteById(int id); //delete specific user based on id
 
